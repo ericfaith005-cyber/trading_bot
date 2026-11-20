@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: ai-trading-bot-api
+    runtime: python
+    plan: free
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: python server.py
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.2
+      - key: BOT_BIND_HOST
+        value: 0.0.0.0
+      - key: MARKET_DATA_MODE
+        value: twelvedata
+      - key: TWELVE_DATA_API_KEY
+        sync: false
