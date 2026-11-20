@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "AI Trading Bot",
+    "slug": "ai-trading-bot",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#121824"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.aitrading.bot",
+      "adaptiveIcon": {
+        "backgroundColor": "#121824"
+      },
+      "permissions": [
+        "INTERNET",
+        "ACCESS_NETWORK_STATE"
+      ]
+    },
+    "extra": {}
+  }
+}

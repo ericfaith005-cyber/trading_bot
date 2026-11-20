@@ -1,0 +1,5 @@
+google-genai
+numpy
+pandas
+requests
+MetaTrader5; platform_system == "Windows"
